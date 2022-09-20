@@ -1,2 +1,4 @@
 # Cooling-Fan-Project
 A fun project operated using FreeRTOS
+
+It's a controllable cooling fan, which uses a temperature and humidity sensor to get the information and display it on the LCD. An ultrasonic sensor was used to detect if there is an object in front of the fan. When the temperature hits 30 degrees celsius and the ultrasonic sensor detects there is an object, the fan will automatically turn on. While the fan is operating, if the object gets removed, the fan will automatically turn off. And the user can adjust the wind level or turn it off with remote control.  FreeRTOS was used to implement all tasks. Hardware-wise, an Arduino mega 2560 board, DHT11 temperature and humidity module, LDC1602 module, ultrasonic sensor, fan blade and 3-6V motor, L293D chip, remote control, an additional power supply, and IR receiver module from the Arduino kit.
